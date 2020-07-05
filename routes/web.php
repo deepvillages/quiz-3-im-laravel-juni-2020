@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+});*/
+
+Route::get('/', function () {
+    return view('layouts.master');
 });
 
 Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
